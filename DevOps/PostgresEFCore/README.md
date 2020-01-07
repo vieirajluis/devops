@@ -19,10 +19,10 @@ Create an instance of the PostgreSQL database service (myPostgres) in a org/spac
 ## Publish App & Push to CloudFoundry
 
 1. Publish app to a local directory, specifying the framework and runtime (select ONE of these commands):
-   * dotnet publish -c Release -f netcoreapp3.*(or 2.*)
+   * dotnet publish -c Release -f netcoreapp3.'*'(or 2.'*')
   
 1. Push the app using the appropriate manifest (select ONE of these commands):
-   * cf push -f manifest.yml -p bin/Release/netcoreapp3.*/(or 2.*)publish
+   * cf push -f manifest.yml -p bin/Release/netcoreapp3.'*'/(or 2.'*')publish
 
 > Note: The provided manifest(s) will create an app named `postgresefcore-connector` and attempt to bind the app to PostgreSql service `myPostgres`.
 
