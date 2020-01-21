@@ -46,6 +46,7 @@ namespace PostgresEFCore
                 AddData<TestData>(db, new TestData() { Id = 1, Data = "Test Data 1 - EF Core TestContext" });
                 AddData<TestData>(db, new TestData() { Id = 2, Data = "Test Data 2 - EF Core TestContext" });
                 AddData<TestData>(db, new TestData() { Id = 3, Data = "Test Data 3 - EF Core DevOps TestContext" });
+                AddData<TestData>(db, new TestData() { Id = 4, Data = "Test Data 4 - EF Core DevOps Azure" });
                 db.SaveChanges();
             }
         }
